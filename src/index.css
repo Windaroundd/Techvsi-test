@@ -1,13 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "RobotoCondensed";
+  font-weight: 400;
+  color: #000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url(./assets/fonts/RobotoCondensed-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url(./assets/fonts/RobotoCondensed-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card {
+  max-width: 327px;
+  background-color: #f5f5f5;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card .card-header {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 56px;
+}
+
+.wrapper div:nth-child(2) .card .card-header__content h2,
+.wrapper div:nth-child(2) .card .card-header__content p {
+  color: #2c3941;
+}
+.wrapper div:nth-child(odd) .card .card-header__content h2,
+.wrapper div:nth-child(odd) .card .card-header__content p {
+  color: #ffffff;
+}
+
+.card-body {
+  position: relative;
+}
+.card-body .card-body__content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-left: 16px;
+  padding-right: 16px;
+  gap: 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.card-body .card-body__content::before {
+  position: absolute;
+  content: "";
+  width: 790.72px;
+  height: 446.93px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  top: -43px;
+  left: -180px;
+  z-index: -10;
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    gap: 1.5rem;
+  }
+  .wrapper div:nth-child(1) .card {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .wrapper div:nth-child(2) .card {
+    transform: scale(1.2);
+    z-index: 20;
+  }
+  .wrapper div:nth-child(3) .card {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
