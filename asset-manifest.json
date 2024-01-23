@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Techvsi-test/static/css/main.cc43797d.css",
+    "main.js": "/Techvsi-test/static/js/main.77e0c576.js",
+    "static/js/787.cb4ea550.chunk.js": "/Techvsi-test/static/js/787.cb4ea550.chunk.js",
+    "static/media/RobotoCondensed-Bold.ttf": "/Techvsi-test/static/media/RobotoCondensed-Bold.b151d2e8beef32d5bd12.ttf",
+    "static/media/RobotoCondensed-Regular.ttf": "/Techvsi-test/static/media/RobotoCondensed-Regular.72f32aff4124468d86a4.ttf",
+    "static/media/np_vinilex-216x300.png": "/Techvsi-test/static/media/np_vinilex-216x300.9fd3248d50469f326ef4.png",
+    "static/media/np_odourless-216x300.png": "/Techvsi-test/static/media/np_odourless-216x300.17c989eb2e6160a580d9.png",
+    "static/media/np_matex-216x300.png": "/Techvsi-test/static/media/np_matex-216x300.cc13cf3b455cff112d8d.png",
+    "index.html": "/Techvsi-test/index.html",
+    "main.cc43797d.css.map": "/Techvsi-test/static/css/main.cc43797d.css.map",
+    "main.77e0c576.js.map": "/Techvsi-test/static/js/main.77e0c576.js.map",
+    "787.cb4ea550.chunk.js.map": "/Techvsi-test/static/js/787.cb4ea550.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc43797d.css",
+    "static/js/main.77e0c576.js"
+  ]
+}
